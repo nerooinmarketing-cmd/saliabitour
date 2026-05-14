@@ -1,0 +1,13 @@
+export const reservations = [
+  { id: 'RES-001', customerId: '1', customerName: 'Ahmet Aksoy', type: 'tour', itemId: '2', itemName: 'Kapadokya Rüyası', date: '2024-05-12', endDate: '2024-05-16', guests: 2, amount: 16400, currency: 'TRY', status: 'confirmed', paymentStatus: 'paid', notes: '', adminNotes: 'VIP müşteri' },
+  { id: 'RES-002', customerId: '2', customerName: 'Merve Öztürk', type: 'tour', itemId: '1', itemName: 'Ege Kıyıları Turu', date: '2024-05-11', endDate: '2024-05-18', guests: 4, amount: 50000, currency: 'TRY', status: 'pending', paymentStatus: 'unpaid', notes: 'Grup indirim talep etti', adminNotes: '' },
+  { id: 'RES-003', customerId: '3', customerName: 'Caner Kaya', type: 'tour', itemId: '3', itemName: 'Mavi Yolculuk', date: '2024-05-10', endDate: '2024-05-15', guests: 2, amount: 31500, currency: 'TRY', status: 'confirmed', paymentStatus: 'paid', notes: '', adminNotes: '' },
+  { id: 'RES-004', customerId: '4', customerName: 'Elif Demir', type: 'hotel', itemId: '1', itemName: 'Grand Sapphire Resort', date: '2024-06-01', endDate: '2024-06-08', guests: 3, amount: 38500, currency: 'TRY', status: 'paid', paymentStatus: 'paid', notes: 'Deniz manzaralı oda istedi', adminNotes: 'Sadakat programı üyesi' },
+  { id: 'RES-005', customerId: '5', customerName: 'Burak Yıldız', type: 'tour', itemId: '4', itemName: 'İstanbul Kültür Turu', date: '2024-05-20', endDate: '2024-05-23', guests: 6, amount: 27000, currency: 'TRY', status: 'cancelled', paymentStatus: 'refunded', notes: 'Tarih değişikliği nedeniyle iptal', adminNotes: '' },
+  { id: 'RES-006', customerId: '6', customerName: 'Selin Arslan', type: 'hotel', itemId: '2', itemName: 'Kapadokya Mağara Otel', date: '2024-06-15', endDate: '2024-06-18', guests: 2, amount: 22500, currency: 'TRY', status: 'confirmed', paymentStatus: 'partial', notes: 'Balon turu da isteniyor', adminNotes: '' },
+  { id: 'RES-007', customerId: '7', customerName: 'Oğuz Çelik', type: 'tour', itemId: '5', itemName: 'Antalya Her Şey Dahil', date: '2024-07-01', endDate: '2024-07-08', guests: 5, amount: 110000, currency: 'TRY', status: 'pending', paymentStatus: 'unpaid', notes: '', adminNotes: 'Aile paketi uygulanacak' },
+  { id: 'RES-008', customerId: '8', customerName: 'Zeynep Koç', type: 'tour', itemId: '1', itemName: 'Ege Kıyıları Turu', date: '2024-06-10', endDate: '2024-06-17', guests: 2, amount: 25000, currency: 'TRY', status: 'completed', paymentStatus: 'paid', notes: '', adminNotes: 'Çok memnun kaldı, referans olabilir' },
+];
+
+export const reservationStatuses = ['pending','confirmed','paid','cancelled','completed'];
+export const paymentStatuses = ['unpaid','partial','paid','refunded'];
