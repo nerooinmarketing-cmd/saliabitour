@@ -2,33 +2,33 @@
 
 @theme {
   /* Colors - Material Design 3 from Stitch */
-  --color-primary: #0054cb;
-  --color-primary-container: #056bfd;
-  --color-primary-fixed: #dae2ff;
-  --color-primary-fixed-dim: #b1c5ff;
+  --color-primary: #1d4df2;
+  --color-primary-container: #5883fb;
+  --color-primary-fixed: #dbe4ff;
+  --color-primary-fixed-dim: #b8caff;
   --color-on-primary: #ffffff;
-  --color-on-primary-container: #fffcff;
-  --color-on-primary-fixed: #001847;
-  --color-on-primary-fixed-variant: #0040a0;
-  --color-inverse-primary: #b1c5ff;
+  --color-on-primary-container: #ffffff;
+  --color-on-primary-fixed: #011a6d;
+  --color-on-primary-fixed-variant: #0621b5;
+  --color-inverse-primary: #b8caff;
 
-  --color-secondary: #bc000c;
-  --color-secondary-container: #e80e17;
-  --color-secondary-fixed: #ffdad5;
-  --color-secondary-fixed-dim: #ffb4aa;
+  --color-secondary: #0621b5;
+  --color-secondary-container: #356ef8;
+  --color-secondary-fixed: #d0dcff;
+  --color-secondary-fixed-dim: #a6c0ff;
   --color-on-secondary: #ffffff;
-  --color-on-secondary-container: #fffbff;
-  --color-on-secondary-fixed: #410001;
-  --color-on-secondary-fixed-variant: #930007;
+  --color-on-secondary-container: #ffffff;
+  --color-on-secondary-fixed: #000c3b;
+  --color-on-secondary-fixed-variant: #02167a;
 
-  --color-tertiary: #934700;
-  --color-tertiary-container: #b95a00;
-  --color-tertiary-fixed: #ffdbc7;
-  --color-tertiary-fixed-dim: #ffb688;
+  --color-tertiary: #4a9df7;
+  --color-tertiary-container: #5bb4f8;
+  --color-tertiary-fixed: #cce8ff;
+  --color-tertiary-fixed-dim: #99d1ff;
   --color-on-tertiary: #ffffff;
-  --color-on-tertiary-container: #fffcff;
-  --color-on-tertiary-fixed: #311300;
-  --color-on-tertiary-fixed-variant: #733600;
+  --color-on-tertiary-container: #002244;
+  --color-on-tertiary-fixed: #001a33;
+  --color-on-tertiary-fixed-variant: #003366;
 
   --color-error: #ba1a1a;
   --color-error-container: #ffdad6;
