@@ -30,7 +30,7 @@ const DEFAULT_UI_ELEMENTS = {
     linkText: 'HEMEN İNCELE', 
     linkPath: '/tours?q=kampanya', 
     visible: true,
-    bgColor: '#FF2400' 
+    bgColor: 'var(--color-primary)' 
   },
   leftStickyPromo: { 
     text: '1.500 TL İNDİRİM', 

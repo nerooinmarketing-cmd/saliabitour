@@ -41,7 +41,7 @@ export default function PublicLayout() {
         >
           <span>{uiElements.topAnnouncement.text}</span>
           {uiElements.topAnnouncement.linkPath && (
-            <Link to={uiElements.topAnnouncement.linkPath} className="bg-white text-[#FF2400] px-3 py-1 rounded-md text-[10px] font-black uppercase hover:bg-[#F0F0F0] transition-colors">
+            <Link to={uiElements.topAnnouncement.linkPath} className="bg-white text-primary px-3 py-1 rounded-md text-[10px] font-black uppercase hover:bg-[#F0F0F0] transition-colors">
               {uiElements.topAnnouncement.linkText}
             </Link>
           )}
@@ -55,12 +55,12 @@ export default function PublicLayout() {
             if (menu.isPhone) {
               return (
                 <div key={menu.id} className="flex items-center gap-1">
-                  <span className="material-symbols-outlined text-sm text-[#FF2400]">{menu.icon}</span>
+                  <span className="material-symbols-outlined text-sm text-primary">{menu.icon}</span>
                   <span className="font-bold text-[#24292E]">{menu.value}</span>
                 </div>
               );
             }
-                <div key={menu.id} className="relative group flex items-center gap-1 cursor-pointer hover:text-[#FF2400] transition-colors py-2">
+                <div key={menu.id} className="relative group flex items-center gap-1 cursor-pointer hover:text-primary transition-colors py-2">
                   <span className="material-symbols-outlined text-sm">{menu.icon}</span>
                   {menu.value}
                   <span className="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
@@ -76,13 +76,13 @@ export default function PublicLayout() {
                     <div className="max-h-[300px] overflow-y-auto custom-scrollbar">
                       {salesOffices.map(office => (
                         <div key={office.id} className="px-5 py-4 hover:bg-slate-50 transition-all flex flex-col gap-1 border-b border-slate-50 last:border-0 group/item">
-                          <span className="font-black text-[#24292E] text-xs group-hover/item:text-[#FF2400] transition-colors">{office.name}</span>
+                          <span className="font-black text-[#24292E] text-xs group-hover/item:text-primary transition-colors">{office.name}</span>
                           <div className="flex items-center gap-2 text-slate-500 mt-1">
-                            <span className="material-symbols-outlined text-[14px] text-[#FF2400]">call</span>
+                            <span className="material-symbols-outlined text-[14px] text-primary">call</span>
                             <span className="text-[11px] font-bold">{office.phone}</span>
                           </div>
                           {office.mapUrl && (
-                            <a href={office.mapUrl} target="_blank" rel="noreferrer" className="text-[#FF2400] text-[10px] font-black hover:underline flex items-center gap-1 mt-2 bg-red-50 w-fit px-2 py-1 rounded">
+                            <a href={office.mapUrl} target="_blank" rel="noreferrer" className="text-primary text-[10px] font-black hover:underline flex items-center gap-1 mt-2 bg-red-50 w-fit px-2 py-1 rounded">
                               <span className="material-symbols-outlined text-[12px]">map</span>
                               {t('public.viewOnMap')}
                             </a>
@@ -93,7 +93,7 @@ export default function PublicLayout() {
                   </div>
                 </div>
             return (
-              <Link key={menu.id} to={menu.path} className="hover:text-[#FF2400] transition-colors flex items-center gap-1">
+              <Link key={menu.id} to={menu.path} className="hover:text-primary transition-colors flex items-center gap-1">
                 {menu.icon && <span className="material-symbols-outlined text-sm">{menu.icon}</span>}
                 {menu.value}
               </Link>
@@ -108,12 +108,12 @@ export default function PublicLayout() {
         <nav className="flex justify-between items-center h-20 px-6 lg:px-8 max-w-[1200px] mx-auto">
           <div className="flex items-center gap-8">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-[#FF2400] rounded-lg flex items-center justify-center text-white shadow-lg group-hover:bg-[#d91f00] transition-colors">
+              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg group-hover:bg-secondary transition-colors">
                 <span className="material-symbols-outlined text-2xl">flight_takeoff</span>
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-black tracking-tighter text-[#24292E]">
-                  by<span className="text-[#FF2400]">tour</span>
+                  by<span className="text-primary">tour</span>
                 </span>
                 <span className="text-[10px] font-bold text-slate-400 tracking-[0.2em] uppercase mt-0.5">Premium Travel</span>
               </div>
@@ -124,7 +124,7 @@ export default function PublicLayout() {
                 <Link
                   key={link.path + link.label}
                   to={link.path}
-                  className={`text-[13px] font-bold transition-colors ${location.pathname + location.search === link.path ? 'text-[#FF2400]' : 'text-[#24292E] hover:text-[#FF2400]'}`}
+                  className={`text-[13px] font-bold transition-colors ${location.pathname + location.search === link.path ? 'text-primary' : 'text-[#24292E] hover:text-primary'}`}
                 >
                   {link.label}
                 </Link>
@@ -137,10 +137,10 @@ export default function PublicLayout() {
             <div className="relative">
               <button 
                 onClick={() => setShowNotifications(!showNotifications)}
-                className="p-2 text-[#24292E] hover:text-[#FF2400] relative transition-colors"
+                className="p-2 text-[#24292E] hover:text-primary relative transition-colors"
               >
                 <span className="material-symbols-outlined text-2xl">notifications</span>
-                <span className="absolute top-2 right-2 w-2 h-2 bg-[#FF2400] rounded-full border border-white"></span>
+                <span className="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full border border-white"></span>
               </button>
               {showNotifications && (
                 <>
@@ -152,7 +152,7 @@ export default function PublicLayout() {
                     {notifications.map(n => (
                       <div key={n.id} className="px-4 py-3 hover:bg-slate-50 transition-colors cursor-pointer flex items-start gap-3">
                         <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined text-[#FF2400] text-sm">{n.icon}</span>
+                          <span className="material-symbols-outlined text-primary text-sm">{n.icon}</span>
                         </div>
                         <div>
                           <p className="text-xs font-bold text-[#24292E]">{n.text}</p>
@@ -166,7 +166,7 @@ export default function PublicLayout() {
             </div>
 
             <Link to="/admin/login" className="flex items-center gap-2 border border-slate-200 rounded-full px-4 py-2 hover:bg-[#F0F0F0] transition-colors group">
-              <span className="material-symbols-outlined text-[#24292E] group-hover:text-[#FF2400] transition-colors">account_circle</span>
+              <span className="material-symbols-outlined text-[#24292E] group-hover:text-primary transition-colors">account_circle</span>
               <div className="text-left leading-tight hidden sm:block">
                 <div className="text-[11px] font-bold text-[#24292E]">{t('public.login')}</div>
                 <div className="text-[9px] text-slate-500">{t('public.orRegister')}</div>
@@ -190,7 +190,7 @@ export default function PublicLayout() {
                   key={link.path + link.label}
                   to={link.path}
                   onClick={() => setMobileOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-sm font-bold transition-colors ${location.pathname + location.search === link.path ? 'text-[#FF2400] bg-red-50' : 'text-[#24292E] hover:bg-[#F0F0F0]'}`}
+                  className={`px-4 py-3 rounded-lg text-sm font-bold transition-colors ${location.pathname + location.search === link.path ? 'text-primary bg-red-50' : 'text-[#24292E] hover:bg-[#F0F0F0]'}`}
                 >
                   {link.label}
                 </Link>
@@ -202,7 +202,7 @@ export default function PublicLayout() {
 
       {/* Sticky Left Button */}
       {uiElements.leftStickyPromo.visible && (
-        <Link to={uiElements.leftStickyPromo.path} className="hidden xl:flex fixed left-0 top-1/2 -translate-y-1/2 bg-[#FF2400] text-white py-4 px-2 rounded-r-lg z-50 cursor-pointer hover:bg-[#d91f00] transition-colors items-center justify-center writing-vertical shadow-lg">
+        <Link to={uiElements.leftStickyPromo.path} className="hidden xl:flex fixed left-0 top-1/2 -translate-y-1/2 bg-primary text-white py-4 px-2 rounded-r-lg z-50 cursor-pointer hover:bg-secondary transition-colors items-center justify-center writing-vertical shadow-lg">
           <span className="transform -rotate-180 writing-vertical-rl text-sm font-black tracking-widest whitespace-nowrap" style={{ writingMode: 'vertical-rl' }}>{uiElements.leftStickyPromo.text}</span>
           <span className="material-symbols-outlined transform -rotate-90 mt-2 text-lg">chevron_right</span>
         </Link>
@@ -219,7 +219,7 @@ export default function PublicLayout() {
               <span className="material-symbols-outlined">headset_mic</span>
             </div>
           </button>
-          <Link to="/contact" className="bg-[#FF2400] text-white px-6 py-3 rounded-l-md shadow-lg font-bold text-sm flex items-center gap-2 hover:bg-[#d91f00] transition-colors">
+          <Link to="/contact" className="bg-primary text-white px-6 py-3 rounded-l-md shadow-lg font-bold text-sm flex items-center gap-2 hover:bg-secondary transition-colors">
             <span className="material-symbols-outlined">call</span> {t('public.callUs')}
           </Link>
         </div>
@@ -245,25 +245,25 @@ export default function PublicLayout() {
       <footer className="w-full mt-20 bg-[#24292E] text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-16 px-8 lg:px-12 max-w-[1200px] mx-auto">
           <div className="space-y-4">
-            <span className="text-2xl font-black text-white">by<span className="text-[#FF2400]">tour</span></span>
+            <span className="text-2xl font-black text-white">by<span className="text-primary">tour</span></span>
             <p className="text-sm text-slate-400 leading-relaxed">{t('footer.description')}</p>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-sm font-bold text-white uppercase tracking-wider">{t('footer.explore')}</span>
-            <Link to="/tours" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('nav.tours')}</Link>
-            <Link to="/hotels" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('nav.hotels')}</Link>
-            <Link to="/blog" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('nav.blog')}</Link>
+            <Link to="/tours" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('nav.tours')}</Link>
+            <Link to="/hotels" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('nav.hotels')}</Link>
+            <Link to="/blog" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('nav.blog')}</Link>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-sm font-bold text-white uppercase tracking-wider">{t('footer.support')}</span>
-            <Link to="/contact" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('footer.contactUs')}</Link>
-            <Link to="/about" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('footer.aboutUs')}</Link>
-            <Link to="/contact" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('footer.faq')}</Link>
+            <Link to="/contact" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('footer.contactUs')}</Link>
+            <Link to="/about" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('footer.aboutUs')}</Link>
+            <Link to="/contact" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('footer.faq')}</Link>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-sm font-bold text-white uppercase tracking-wider">{t('footer.legal')}</span>
-            <Link to="/about" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('footer.privacyPolicy')}</Link>
-            <Link to="/about" className="text-xs uppercase tracking-wider text-slate-400 hover:text-[#FF2400] transition-colors">{t('footer.termsOfService')}</Link>
+            <Link to="/about" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link>
+            <Link to="/about" className="text-xs uppercase tracking-wider text-slate-400 hover:text-primary transition-colors">{t('footer.termsOfService')}</Link>
           </div>
         </div>
         
@@ -280,9 +280,9 @@ export default function PublicLayout() {
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder={t('newsletter.placeholder')} 
-                className="flex-1 px-4 py-3 bg-[#24292E] border border-slate-600 rounded-lg text-sm text-white focus:outline-none focus:border-[#FF2400] transition-colors" 
+                className="flex-1 px-4 py-3 bg-[#24292E] border border-slate-600 rounded-lg text-sm text-white focus:outline-none focus:border-primary transition-colors" 
               />
-              <button type="submit" className="px-6 py-3 bg-[#FF2400] text-white rounded-lg text-sm font-bold hover:bg-[#d91f00] transition-colors shadow-lg">
+              <button type="submit" className="px-6 py-3 bg-primary text-white rounded-lg text-sm font-bold hover:bg-secondary transition-colors shadow-lg">
                 {t('newsletter.subscribe')}
               </button>
             </form>

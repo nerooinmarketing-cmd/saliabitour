@@ -47,7 +47,7 @@ export default function HomePage() {
                  <h3 className="font-bold text-xl leading-tight">Sy Hotels Luxury Belek</h3>
                  <p className="text-[11px] text-white/80 mb-4 mt-1">Antalya - Serik</p>
                  
-                 <div className="text-[#FF2400] text-[12px] font-bold mb-4 leading-tight bg-white/10 w-fit px-2 py-1 rounded">
+                 <div className="text-primary text-[12px] font-bold mb-4 leading-tight bg-white/10 w-fit px-2 py-1 rounded">
                    Erken Rezervasyon<br/>%30 İndirim + 9 Taksit
                  </div>
                  
@@ -56,13 +56,13 @@ export default function HomePage() {
                     <div className="text-4xl font-black tracking-tighter">4.459<span className="text-sm font-bold tracking-normal">,00 TL</span></div>
                  </div>
                  
-                 <button className="mt-3 bg-[#FF2400] text-white px-4 py-1.5 text-[11px] font-bold rounded-sm w-fit hover:bg-[#d91f00] transition-colors shadow-lg">
+                 <button className="mt-3 bg-primary text-white px-4 py-1.5 text-[11px] font-bold rounded-sm w-fit hover:bg-secondary transition-colors shadow-lg">
                    Fırsatı İncele
                  </button>
               </div>
 
               {/* Red Swoosh Divider */}
-              <div className="absolute left-[45%] -translate-x-[60%] top-[-20%] bottom-[-20%] w-[120px] bg-[#FF2400] rounded-[50%] z-10 opacity-90 transition-transform group-hover:scale-110"></div>
+              <div className="absolute left-[45%] -translate-x-[60%] top-[-20%] bottom-[-20%] w-[120px] bg-primary rounded-[50%] z-10 opacity-90 transition-transform group-hover:scale-110"></div>
               {/* White curve shadow trick */}
               <div className="absolute left-[45%] -translate-x-[50%] top-[-20%] bottom-[-20%] w-[120px] bg-white rounded-[50%] z-[5]"></div>
 
@@ -73,7 +73,7 @@ export default function HomePage() {
                  {/* Pagination Dots */}
                  <div className="absolute bottom-4 right-6 flex gap-1.5">
                    {[1, 2, 3, 4, 5, 6, 7].map(i => (
-                     <div key={i} className={`w-2.5 h-2.5 rounded-full border border-white cursor-pointer ${i === 1 ? 'bg-[#FF2400] border-[#FF2400]' : 'bg-transparent'}`}></div>
+                     <div key={i} className={`w-2.5 h-2.5 rounded-full border border-white cursor-pointer ${i === 1 ? 'bg-primary border-primary' : 'bg-transparent'}`}></div>
                    ))}
                  </div>
               </div>
@@ -139,10 +139,10 @@ export default function HomePage() {
             { q: 'bayram', label: 'Bayram Turları', img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=200&h=200&fit=crop', type: 'tour' },
           ].map((cat, i) => (
             <div key={i} onClick={() => navigate(cat.type === 'hotel' ? `/hotels?q=${cat.q}` : `/tours?q=${cat.q}`)} className="flex flex-col items-center gap-2 group cursor-pointer shrink-0">
-              <div className={`w-[95px] h-[95px] rounded-2xl overflow-hidden transition-all duration-300 border-2 shadow-sm ${i === 0 ? 'border-[#FF2400] scale-105 shadow-md' : 'border-transparent group-hover:border-[#FF2400] group-hover:-translate-y-1'}`}>
+              <div className={`w-[95px] h-[95px] rounded-2xl overflow-hidden transition-all duration-300 border-2 shadow-sm ${i === 0 ? 'border-primary scale-105 shadow-md' : 'border-transparent group-hover:border-primary group-hover:-translate-y-1'}`}>
                 <img src={cat.img} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" alt={cat.label} />
               </div>
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-[#FF2400] transition-colors">{cat.label}</span>
+              <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-primary transition-colors">{cat.label}</span>
             </div>
           ))}
         </div>
@@ -152,11 +152,11 @@ export default function HomePage() {
       <section className="max-w-[1200px] mx-auto px-6 lg:px-8 py-12 relative">
 
         {/* Banner Header */}
-        <div className="bg-[#24292E] text-white flex justify-between items-center px-6 py-4 rounded-t-md mb-6 shadow-md border-b-4 border-[#FF2400]">
+        <div className="bg-[#24292E] text-white flex justify-between items-center px-6 py-4 rounded-t-md mb-6 shadow-md border-b-4 border-primary">
           <h2 className="text-3xl font-black italic tracking-tight">ByTour Öneriyor!</h2>
           <div className="flex items-center gap-4">
             <span className="text-xl font-bold bg-[#14171a] px-4 py-1.5 rounded text-white shadow-inner">Bu Otellerde %50'ye Varan İndirim Fırsatı Var!</span>
-            <button className="bg-[#FF2400] text-white px-6 py-1.5 rounded font-black text-sm hover:bg-[#d91f00] transition-colors uppercase tracking-wider shadow-lg">Hemen İncele!</button>
+            <button className="bg-primary text-white px-6 py-1.5 rounded font-black text-sm hover:bg-secondary transition-colors uppercase tracking-wider shadow-lg">Hemen İncele!</button>
           </div>
         </div>
 
@@ -166,7 +166,7 @@ export default function HomePage() {
             <button 
               key={idx}
               onClick={() => setRecTab(tab)}
-              className={`px-6 py-4 text-sm font-bold whitespace-nowrap transition-colors border-r border-slate-100 ${recTab === tab ? 'bg-[#FF2400] text-white' : 'text-[#24292E] hover:bg-[#F0F0F0]'}`}
+              className={`px-6 py-4 text-sm font-bold whitespace-nowrap transition-colors border-r border-slate-100 ${recTab === tab ? 'bg-primary text-white' : 'text-[#24292E] hover:bg-[#F0F0F0]'}`}
             >
               {tab}
             </button>
@@ -194,7 +194,7 @@ export default function HomePage() {
                 <div className="h-48 overflow-hidden relative">
                   <img src={hotel.images[0]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={hotel.nameTR} />
                   {/* Fire Red Discount Tag */}
-                  <div className="absolute top-2 right-2 bg-[#FF2400] text-white text-[10px] font-black px-2 py-1 rounded shadow-md">
+                  <div className="absolute top-2 right-2 bg-primary text-white text-[10px] font-black px-2 py-1 rounded shadow-md">
                     %40 İNDİRİM
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export default function HomePage() {
                   
                   <div className="mt-auto">
                     <div className="bg-white border border-slate-200 text-[#24292E] text-[11px] font-bold px-2 py-2 rounded-sm mb-4 flex items-center justify-center gap-1 shadow-sm">
-                      <span className="material-symbols-outlined text-[14px] text-[#FF2400]">sell</span>
+                      <span className="material-symbols-outlined text-[14px] text-primary">sell</span>
                       Erken Rezervasyon %40 İndirim + 9 Taksit
                     </div>
                     
@@ -231,7 +231,7 @@ export default function HomePage() {
           <div onClick={() => navigate('/tours')} className="lg:col-span-2 relative h-[300px] group cursor-pointer overflow-hidden rounded-sm">
             <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&h=400&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Yurt Dışı Turları" />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#24292E] to-transparent p-6">
-              <div className="bg-[#FF2400] text-white px-6 py-3 inline-block font-black text-lg rounded-sm shadow-lg">
+              <div className="bg-primary text-white px-6 py-3 inline-block font-black text-lg rounded-sm shadow-lg">
                 Yurt Dışı Turları
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function HomePage() {
               <div className="absolute inset-0 p-4 flex flex-col justify-center">
                 <div className="text-white text-lg font-black leading-tight">1,5 Gün İzinle<br/>9 Günlük Kurban Bayramı Tatili</div>
                 <div className="flex items-end gap-2 mt-2">
-                  <div className="bg-[#FF2400] text-white px-3 py-1 font-black text-2xl flex items-center rounded shadow">85 <span className="text-sm ml-1">€</span></div>
+                  <div className="bg-primary text-white px-3 py-1 font-black text-2xl flex items-center rounded shadow">85 <span className="text-sm ml-1">€</span></div>
                   <div className="bg-[#F0F0F0] text-[#24292E] text-[10px] font-black px-2 py-1 leading-tight rounded border border-slate-300">'dan Başlayan<br/>Fiyatlarla</div>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function HomePage() {
             <div onClick={() => navigate('/hotels?q=kıbrıs')} className="relative h-[142px] group cursor-pointer overflow-hidden rounded-sm">
               <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=200&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Promo" />
               <div className="absolute bottom-4 left-4">
-                <div className="bg-[#24292E] text-white px-4 py-2 font-black text-sm shadow-lg border-l-4 border-[#FF2400]">Kıbrıs Otelleri</div>
+                <div className="bg-[#24292E] text-white px-4 py-2 font-black text-sm shadow-lg border-l-4 border-primary">Kıbrıs Otelleri</div>
               </div>
             </div>
           </div>

@@ -495,38 +495,39 @@
       "forgotPassword": "Şifremi Unuttum",
       "loginBtn": "Giriş Yap",
       "invalidCredentials": "Geçersiz e-posta veya şifre"
-    },
-    "sidebar": {
-      "hotel": "Otel",
-      "packageTour": "Paket Tur",
-      "searchHoliday": "Tatil Ara",
-      "searchTour": "Tur Ara",
-      "searchFlight": "Uçak Bileti Ara",
-      "destinationPlaceholderHotel": "Bölge / Otel / Kampanya",
-      "destinationPlaceholderTour": "Gidilecek Yer / Tur Adı",
-      "destinationPlaceholderFlight": "Nereden - Nereye",
-      "inputPlaceholderFlight": "İstanbul - Antalya",
-      "inputPlaceholder": "Şehir, ilçe veya tatil bölgesi yazınız",
-      "departureDate": "Gidiş Tarihi",
-      "returnDate": "Dönüş Tarihi",
-      "checkIn": "Giriş Tarihi",
-      "checkOut": "Çıkış Tarihi",
-      "adult": "Yetişkin",
-      "child": "Çocuk",
-      "availableOnly": "Sadece Müsait Oteller",
-      "searchHotelBtn": "Otel Ara",
-      "searchTourBtn": "Tur Ara",
-      "searchFlightBtn": "Uçak Bileti Bul"
-    },
-    "public": {
-      "offices": "Satış Ofislerimiz",
-      "viewOnMap": "HARİTADA GÖR",
-      "notifications": "Bildirimler",
-      "login": "Giriş Yap",
-      "orRegister": "veya Üye Ol",
-      "backToTop": "Başa Dön",
-      "callUs": "Biz Sizi Arayalım",
-      "newsletterSuccess": "Bültenimize başarıyla abone oldunuz! En güncel fırsatlardan haberdar olacaksınız."
     }
+  },
+  "sidebar": {
+    "hotel": "Otel",
+    "packageTour": "Paket Tur",
+    "searchHoliday": "Tatil Ara",
+    "searchTour": "Tur Ara",
+    "searchFlight": "Uçak Bileti Ara",
+    "destinationPlaceholderHotel": "Bölge / Otel / Kampanya",
+    "destinationPlaceholderTour": "Gidilecek Yer / Tur Adı",
+    "destinationPlaceholderFlight": "Nereden - Nereye",
+    "inputPlaceholderFlight": "İstanbul - Antalya",
+    "inputPlaceholder": "Şehir, ilçe veya tatil bölgesi yazınız",
+    "departureDate": "Gidiş Tarihi",
+    "returnDate": "Dönüş Tarihi",
+    "checkIn": "Giriş Tarihi",
+    "checkOut": "Çıkış Tarihi",
+    "adult": "Yetişkin",
+    "child": "Çocuk",
+    "availableOnly": "Sadece Müsait Oteller",
+    "searchHotelBtn": "Otel Ara",
+    "searchTourBtn": "Tur Ara",
+    "searchFlightBtn": "Uçak Bileti Bul"
+  },
+  "public": {
+    "offices": "Satış Ofislerimiz",
+    "viewOnMap": "HARİTADA GÖR",
+    "notifications": "Bildirimler",
+    "login": "Giriş Yap",
+    "orRegister": "veya Üye Ol",
+    "backToTop": "Başa Dön",
+    "callUs": "Biz Sizi Arayalım",
+    "newsletterSuccess": "Bültenimize başarıyla abone oldunuz! En güncel fırsatlardan haberdar olacaksınız."
+  }
   }
 }

@@ -143,7 +143,7 @@ export default function SearchSidebar({ className = '' }) {
 
         <button 
           onClick={handleSearch}
-          className="w-full bg-[#FF2400] hover:bg-[#d91f00] text-white font-bold py-3 mt-auto rounded-sm transition-all text-sm shadow-md active:scale-[0.98]"
+          className="w-full bg-primary hover:bg-secondary text-white font-bold py-3 mt-auto rounded-sm transition-all text-sm shadow-md active:scale-[0.98]"
         >
           {activeTab === 'hotel' ? t('sidebar.searchHotelBtn') : activeTab === 'package' ? t('sidebar.searchTourBtn') : t('sidebar.searchFlightBtn')}
         </button>

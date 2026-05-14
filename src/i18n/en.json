@@ -495,38 +495,39 @@
       "forgotPassword": "Forgot Password",
       "loginBtn": "Sign In",
       "invalidCredentials": "Invalid email or password"
-    },
-    "sidebar": {
-      "hotel": "Hotel",
-      "packageTour": "Package Tour",
-      "searchHoliday": "Search Holiday",
-      "searchTour": "Search Tour",
-      "searchFlight": "Search Flight",
-      "destinationPlaceholderHotel": "Region / Hotel / Campaign",
-      "destinationPlaceholderTour": "Destination / Tour Name",
-      "destinationPlaceholderFlight": "From - To",
-      "inputPlaceholderFlight": "Istanbul - Antalya",
-      "inputPlaceholder": "Enter city, district or holiday region",
-      "departureDate": "Departure Date",
-      "returnDate": "Return Date",
-      "checkIn": "Check-in Date",
-      "checkOut": "Check-out Date",
-      "adult": "Adult",
-      "child": "Child",
-      "availableOnly": "Available Hotels Only",
-      "searchHotelBtn": "Search Hotels",
-      "searchTourBtn": "Search Tours",
-      "searchFlightBtn": "Find Flights"
-    },
-    "public": {
-      "offices": "Sales Offices",
-      "viewOnMap": "VIEW ON MAP",
-      "notifications": "Notifications",
-      "login": "Sign In",
-      "orRegister": "or Sign Up",
-      "backToTop": "Back to Top",
-      "callUs": "Let Us Call You",
-      "newsletterSuccess": "Successfully subscribed to our newsletter! You will be notified of the latest deals."
     }
+  },
+  "sidebar": {
+    "hotel": "Hotel",
+    "packageTour": "Package Tour",
+    "searchHoliday": "Search Holiday",
+    "searchTour": "Search Tour",
+    "searchFlight": "Search Flight",
+    "destinationPlaceholderHotel": "Region / Hotel / Campaign",
+    "destinationPlaceholderTour": "Destination / Tour Name",
+    "destinationPlaceholderFlight": "From - To",
+    "inputPlaceholderFlight": "Istanbul - Antalya",
+    "inputPlaceholder": "Enter city, district or holiday region",
+    "departureDate": "Departure Date",
+    "returnDate": "Return Date",
+    "checkIn": "Check-in Date",
+    "checkOut": "Check-out Date",
+    "adult": "Adult",
+    "child": "Child",
+    "availableOnly": "Available Hotels Only",
+    "searchHotelBtn": "Search Hotels",
+    "searchTourBtn": "Search Tours",
+    "searchFlightBtn": "Find Flights"
+  },
+  "public": {
+    "offices": "Sales Offices",
+    "viewOnMap": "VIEW ON MAP",
+    "notifications": "Notifications",
+    "login": "Sign In",
+    "orRegister": "or Sign Up",
+    "backToTop": "Back to Top",
+    "callUs": "Let Us Call You",
+    "newsletterSuccess": "Successfully subscribed to our newsletter! You will be notified of the latest deals."
+  }
   }
 }
